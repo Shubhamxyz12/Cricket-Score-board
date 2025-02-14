@@ -127,4 +127,13 @@ wicketbtn.addEventListener('click', () =>{
     if(wicket_count == 10){
         alert("Game Completed");
     }
+    if(ball_count == 5){
+        ball_count = -1;
+        over_count++;
+        over.textContent = over_count;
+        ball.textContent = ball_count;
+    }
+
+    ball_count++;
+    ball.textContent = ball_count;
 })
